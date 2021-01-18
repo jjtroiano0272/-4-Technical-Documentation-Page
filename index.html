@@ -7,34 +7,34 @@
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-    </script>
-
     <div class="wrapper">
-      <main id="main-doc">
         <!-- Navbar that spans across the top. Always on top. -->
-        <nav id="navbar">
-          <!-- TODO: Needs to be styled. -->
-          <header>Chair Dynamics</header>
+        <nav class="navbar">
+          <!-- TODO: Set image size here. -->
           <img src="mock-logo.svg" alt="Logo Ipsum!" class="navbar-logo">
-
-          <ul>
-            <li><a href="#typical_use_cases"   class="nav-link" id="sidenav-link-1">Typical Use Cases</a></li>
-            <li><a href="#abnormal_use_cases"  class="nav-link" id="sidenav-link-2">Abnormal Use Cases</a></li>
-            <li><a href="#what_it_does"        class="nav-link" id="sidenav-link-3">What it Does</a></li>
-            <li><a href="#who_we_are"          class="nav-link" id="sidenav-link-4">Who We Are</a></li>
-            <li><a href="#origin_story"        class="nav-link" id="sidenav-link-5">Origin Story</a></li>
+          <ul class="navbar-list">
+            <li class=".nav-item"><a href="#">Item Juan</a></li>
+            <li class=".nav-item"><a href="#">Item Tu</a></li>
           </ul>
-
         </nav>
+
+        <!-- Idea credited:
+        https://stackoverflow.com/questions/5995405/how-to-center-a-navigation-bar-with-css-or-html -->
+        <ul class="navbar-list">
+          <li><a href="#typical_use_cases"   class="nav-link" id="sidenav-link-1">Typical Use Cases</a></li>
+          <li><a href="#abnormal_use_cases"  class="nav-link" id="sidenav-link-2">Abnormal Use Cases</a></li>
+          <li><a href="#what_it_does"        class="nav-link" id="sidenav-link-3">What it Does</a></li>
+          <li><a href="#who_we_are"          class="nav-link" id="sidenav-link-4">Who We Are</a></li>
+          <li><a href="#origin_story"        class="nav-link" id="sidenav-link-5">Origin Story</a></li>
+        </ul>
 
         <div class="styled-section">
           <!-- (*) User Story #2: Within the #main-doc element, I can see several section elements, -->
           <section class="main-section" id="typical_use_cases">
             <!-- (*) User Story #3: The first element within each .main-section
-            should be a header element which contains text that describes the
+            should be a h1 element which contains text that describes the
             topic of that section. -->
-            <header>Typical Use Cases</header>
+            <h1>Typical Use Cases</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -43,7 +43,7 @@
         </div>
 
         <section class="main-section" id="abnormal_use_cases">
-          <header>Abnormal Use Cases</header>
+          <h1>Abnormal Use Cases</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut <code>section class="main-section"</code>
             labore et dolore magna aliqua. Ut enim ad
@@ -53,7 +53,7 @@
         </section>
 
         <section class="main-section" id="what_it_does">
-          <header>What it Does</header>
+          <h1>What it Does</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -61,7 +61,7 @@
         </section>
 
         <section class="main-section" id="who_we_are">
-          <header>Who We Are</header>
+          <h1>Who We Are</h1>
           <p>Lorem ipsum dolor sit amet, <code>line-height: 1.5;
           font-size: 10px;</code>consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -73,7 +73,7 @@
         </section>
 
         <section class="main-section" id="origin_story">
-          <header>Origin Story</header>
+          <h1>Origin Story</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -115,8 +115,6 @@
             sprint to review our kpis target rich environment.</p>
 
         </section>
-
-      </main>
     </div>
 
   </body>
